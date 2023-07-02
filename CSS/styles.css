@@ -1,11 +1,86 @@
-html{
-    background-color: rgb(5, 2, 31);
-    color: rgb(243, 221, 181);
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(15, 14, 14);
+    color: rgb(155, 153, 153);
     font-size: 16px;
     font-family: Poppins;
 }
+
+:root{
+    --main-color: rgb(16, 130, 158);
+
+}
+
+span {
+    color: var(--main-color);
+    
+}
+
+.navbar {
+    width: 100wv;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    
+}
+.logo {
+    text-decoration: none;
+    color:white;
+    padding: 3px 5px;
+    margin-left: 20px;
+    font-size: 1.3em;
+    display: inline-block;
+    margin: 15px;
+    border: 1px solid rgb(16,130,158);
+    border-radius: 50px;
+    /*border-left: 1px solid white;
+    border-right: 1px solid white;*/
+}
+
+.logo-span {
+    font-size: 1.5em;
+}
+
+.logo:hover{
+    border: 1px solid white;
+    color: var(--main-color);
+    transition: 0.1s;
+    border-radius: 10px;
+        
+}
+.logo-span:hover {
+    color: white;
+    transition: 0.2s;
+        
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    right: 20px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li {
+    display: block;
+    padding-left: 10px;
+    margin: 20px;
+}
+    
+
+
+
+
 .szakmai-ismeretek {
     background-color: white;
     
