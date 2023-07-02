@@ -76,7 +76,31 @@ span {
     padding-left: 10px;
     margin: 20px;
 }
+
+.myself-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.myself{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+}
+
+.valaki {
+    max-height: 500px;
+    min-width: 400px;
+    padding: auto;
+    margin-top: 30px;
+    /*border: 1px solid white;*/
+    border-radius: 50%;
     
+}
 
 
 
