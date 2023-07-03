@@ -80,7 +80,7 @@ header{
 }
 
 .navbar {
-    display: flex;;
+    display: flex;
 }
 
 .navbar-container {
@@ -94,6 +94,7 @@ header{
 .navbar-item{
     display: block;
     text-align: center;
+    
     padding:15px;
     right: 30px;
     font-weight: 500;
