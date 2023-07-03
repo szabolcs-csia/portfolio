@@ -2,11 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
+=======
+}
+html{
+    background-color: rgb(15, 14, 14);
+    color: rgb(155, 153, 153);
+>>>>>>> 85075a36fa6add4f08452ec9ba4e68429d3ac39e
     font-size: 16px;
     font-family:'Poppins',sans-serif;
     scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
 :root {
     --main-color:rgb(36, 130, 157);
     --text-color-primary:white;
@@ -61,6 +69,105 @@ header{
     height: 32px;
     width: 32px;
     transition: 0.4s;
+=======
+:root{
+    --main-color: rgb(16, 130, 158);
+
+}
+
+span {
+    color: var(--main-color);
+    
+}
+
+.navbar {
+    width: 100wv;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    
+}
+.logo {
+    text-decoration: none;
+    color:white;
+    padding: 3px 5px;
+    margin-left: 20px;
+    font-size: 1.3em;
+    display: inline-block;
+    margin: 15px;
+    border: 1px solid rgb(16,130,158);
+    border-radius: 50px;
+    /*border-left: 1px solid white;
+    border-right: 1px solid white;*/
+}
+
+.logo-span {
+    font-size: 1.5em;
+}
+
+.logo:hover{
+    border: 1px solid white;
+    color: var(--main-color);
+    transition: 0.1s;
+    border-radius: 10px;
+        
+}
+.logo-span:hover {
+    color: white;
+    transition: 0.2s;
+        
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    right: 20px;
+}
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li {
+    display: block;
+    padding-left: 10px;
+    margin: 20px;
+}
+
+.myself-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.myself{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+}
+
+.valaki {
+    max-height: 500px;
+    min-width: 400px;
+    padding: auto;
+    margin-top: 30px;
+    /*border: 1px solid white;*/
+    border-radius: 50%;
+    
+}
+
+
+
+
+.szakmai-ismeretek {
+    background-color: white;
+>>>>>>> 85075a36fa6add4f08452ec9ba4e68429d3ac39e
     
 }
 .logo-span {
