@@ -17,6 +17,7 @@
 html{
     background-color: rgb(2, 18, 22);
     color: var(--text-color-secondary);
+    height:100vh;
 }
 
 ul {
