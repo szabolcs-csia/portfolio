@@ -50,10 +50,10 @@ a{
 @media (min-width: 1400px) { ... }*/
 
 
+/***********************************************
+**************Header*****************/
 
-/**************Header*****************/
-
-header {
+/*header {
     position: fixed;
     width: 100%;
     height: 10vh;
@@ -63,19 +63,13 @@ header {
     z-index: 10;
     background-color: rgb(7, 40, 48);
 
-}
-
+}*/
 .logo {
-    display: block;
     justify-content: center;
     align-items: center;
     color: var(--text-color-secondary);
-    border-top: 1px solid var(--main-color);
-    border-right: 1px solid var(--text-color-secondary);
-    border-bottom: 1px solid var(--main-color);
-    border-left: 1px solid var(--text-color-secondary);
-    padding:15px;
-    font-size: 1.3rem;
+    padding:5px;
+    font-size: 1.5rem;
     margin-left: 20px;
     transition: 0.3s;
     
@@ -87,13 +81,8 @@ header {
     transition: 2s;
 }
 .logo:hover {
-    /*border-top: 2px solid var(--text-color-secondary);
-    border-right: 2.2px solid var(--main-color);
-    border-bottom: 2px solid var(--text-color-secondary);
-    border-left: 2.2px solid var(--main-color);*/
-    border:2px solid var(--main-color);
+    border: 1px solid var(--main-color);
     border-radius: 50%;
-    padding: 10px;
     color: var(--main-color);
 
 }
@@ -101,6 +90,8 @@ header {
     color: var(--text-color-secondary);
     
 }
+
+/*
 .navbar-container{
     display: flex;
     flex-wrap: wrap;
@@ -127,7 +118,7 @@ header {
 
 /********************************************/
 /*************Main oldal********************/
-/******************************************/
+/*****************************************
 
 
 
@@ -137,7 +128,7 @@ main {
     justify-content:space-around;
     align-items: center;
     padding-left: 50px;
-    /*max-width: 1400px;*/
+    /*max-width: 1400px;***********
    
     
 }
@@ -234,7 +225,7 @@ button {
 }
 /***********************************/
 /********Knowledge*****************/
-/*********************************/
+/********************************
 
 .knowledge {
     display: flex;
@@ -303,7 +294,7 @@ button {
     display: flex;
     align-items: flex-start;
     box-shadow: 0px 0px 10px var(--main-color);
-    /*border: 0.8px solid var(--main-color);*/
+    /*border: 0.8px solid var(--main-color);********************
     border-radius: 5px;
     margin: 12px 20px;
 
@@ -346,4 +337,123 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+**********************************************************/
+
+
+.header {
+    background-color:rgb(7, 40, 48);
+    box-shadow: 1px 1px 4px 0 rgba(7,40,48,0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    overflow: hidden;
+    background-color:rgb(12, 61, 73);
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid  rgb(2, 18, 22);
+}
+
+.header ul a:hover {
+    background-color: var(--main-color);
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    font-size: 1.5em;
+    padding: 10px 10px;
+    margin-top: 5px;
+}
+
+.header .menu {
+    clear: both; 
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float:right;
+    cursor: pointer;
+
+      
+}
+
+.header .menu-icon .nav-icon {
+    background: var(--main-color);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+    
+}
+
+.header .menu-icon .nav-icon::before{
+    background: var(--main-color);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top:6px;
+}
+.header .menu-icon .nav-icon::after{
+    background: var(--main-color);
+    content:'';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top:-6px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+@media (min-width:900px) {
+    .header li{
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+
 }
