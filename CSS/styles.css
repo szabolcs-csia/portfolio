@@ -95,7 +95,6 @@ a{
     float:right;
     cursor: pointer;
 
-      
 }
 
 .header .menu-icon .nav-icon {
@@ -182,29 +181,21 @@ a{
 /********************************************/
 /*************Main oldal********************/
 /*****************************************/
-
-
-
 main {
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
     padding-left: 50px;
-   
-   
-    
 }
-
 .fooldal {
-    position: absolute;
+    position:relative;
     top: 10%;
     display: block;
     align-items: center;
     color: var(--text-color-secondary);
     padding: auto;
 }
-
 .myself {
     position: relative;
     display: flex;
@@ -215,7 +206,6 @@ main {
     padding: 30px;
     margin: 30px 30px 0px 30px;
 }
-
 .bemutatkozas {
     display:block;
     justify-content: center;
@@ -226,8 +216,6 @@ main {
     padding:50px;
     position: static;
 }
-  
-
 .bemutatkozas p {
     display: flex;
     flex-wrap: wrap;
@@ -236,22 +224,17 @@ main {
     padding-bottom: 5px;
     color: var(--main-color);
 }
-
 .bemutatkozas h1 {
     font-size: 2.7em;
 }
-
 .bemutatkozas-span {
     font-size: 1.15em;
     color: var(--main-color);
 }
-
 .bemutatkozas h2 {
     font-size: 1.1em;
     font-weight: 400;
 }
-
-
 .valaki-img {
     padding: 1px;
     display: flex;
@@ -261,23 +244,20 @@ main {
     border-radius: 50%;
     align-items: center;
 }
-
 .valaki-img img {
-   border-radius: 50%;
+    border-radius: 50%;
     width: 400px;
     height: 550px;
 }     
-  
 .text {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     min-width: 450px;
     margin: 20px;
     padding: 10px; 
 }
-
-.buttons {
+/*.buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -285,7 +265,6 @@ main {
     
     
 }
-
 button {
     margin-left: 20px;
     padding: 0 30px;
@@ -296,139 +275,138 @@ button {
     text-transform: uppercase;
     letter-spacing: 1px;
 
-}
-/***********************************/
-/********Knowledge*****************/
-/********************************
+}*/
 
-.knowledge {
+/******************************************* 
+ ha nem válik be akkor ezt kell visszaállítani
+***********************************************/
+/*.knowledge {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: var(--text-color-secondary);
-    padding: auto;
+    min-width: 600px;
+    padding: 30px;
+    margin: 30px 30px 0px 30px;
 }
-.knowledge-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.knowledge-container{
+    display: block;
+    justify-content: center;
+    min-width: 450px;
+    height: 60%;
+    position: static;
 }
 .knowledge-container h2 {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
     color: var(--main-color);
-    padding: auto;
-    margin: 30px;
-    
 }
-
-.knowledge-container p {
-    padding: auto;
-    margin: 30px;
-    max-width: 1200px;
-}
-
-.profesional-container {
+.knowledge-container p{
     display: flex;
-   max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    min-width: 450px;
 }
-
+.profesional-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-width: 450px;
+    padding: 30px;
+    margin: 30px 30px 0px 30px;
+}
 .piktogramok {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    margin-left: 30px;
+    
+}
+.piktogramok ul{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
 }
 
-.piktogramok img {
-    width: 130px;
-    height: 150px;
-    margin: 30px;
-    border-radius: 25px;
-   
+.piktogramok li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px;
 }
-.piktogramok p {
-    color: var(--main-color);
-}
-.piktogramok p:hover {
+*********************************************************/
+.knowledge{
+    position: relative;
+    display: block;
+    align-items: center;
     color: var(--text-color-secondary);
+    padding: auto;
+}
+.knowledge-myself {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+    padding: 30px;
+    margin: 30px 30px 0px 30px;
+}
+.knowledge-container{
+    display: block;
+    justify-content: center;
+    min-width: 450px;
+    height: 60%;
+    margin: 50px;
+    padding: 50px;
+    position: static;
+}
+.knowledge-container h2{
+    font-size: 2rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.knowledge-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 450px;
+    margin-top: 20px;
 }
 
+.piktogramok{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px 30px 0px 30px;
+}    
 
-.knowledge-text {
+.profesional-container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+}
+
+.profesional-container li{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+
 }
-  .knowledge-items {
+.profesional-container li img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
     display: flex;
-    align-items: flex-start;
-    box-shadow: 0px 0px 10px var(--main-color);
-    /*border: 0.8px solid var(--main-color);********************
-    border-radius: 5px;
-    margin: 12px 20px;
-
-  }
-  
-  .knowledge-items .image-container {
-    width: 200px;
-    margin:20px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .knowledge-items img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin: 5px;
-  }
-  
-  .knowledge-items .text-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .knowledge-items h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-top: 0;
-  }
-  
-  .knowledge-items p {
-    font-size: 1rem;
-    margin-top: 0;
-  }
-.knowledge-items .text-container,
-.knowledge-items .image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-**********************************************************/
-
-
-@media (min-width:900px) {
-    .header li{
-        float: left;
-    }
-    .header li a {
-        padding: 20px 30px;
-    }
-    .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-    .header .menu-icon {
-        display: none;
-    }
-
+    flex-wrap: wrap;
+    border-radius: 18%;
 }
