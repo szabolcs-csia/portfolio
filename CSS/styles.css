@@ -349,3 +349,17 @@ button {
     flex-wrap: wrap;
     border-radius: 18%;
 }
+.profesional-container li  p{
+    width: 350px;
+    height: 350px;
+    float: inline-start;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 10px;
+
+}
+.profesional-container span{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
